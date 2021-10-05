@@ -24,7 +24,11 @@ public class Movimiento : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        movimiento();
+    }
 
+    void movimiento()
+    {
         float posx = transform.position.x;
         float posy = transform.position.y;
 
@@ -35,7 +39,7 @@ public class Movimiento : MonoBehaviour
         {
             transform.Translate(Vector3.right * despx * speed * Time.deltaTime);
         }
-       
+
         despy = Input.GetAxis("Vertical");
 
         if (limitv)
@@ -64,4 +68,6 @@ public class Movimiento : MonoBehaviour
         }
 
     }
+
+
 }
