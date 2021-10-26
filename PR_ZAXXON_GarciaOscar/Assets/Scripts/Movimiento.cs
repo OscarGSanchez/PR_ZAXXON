@@ -40,6 +40,8 @@ public class Movimiento : MonoBehaviour
             transform.Translate(Vector3.right * despx * speed * Time.deltaTime);
         }
 
+
+
         despy = Input.GetAxis("Vertical");
 
         if (limitv)

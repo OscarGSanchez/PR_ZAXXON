@@ -776,8 +776,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MyPrefab: {fileID: 7789110707980114432, guid: 1ba581f44a96e844f864a28e8544a93b, type: 3}
   MyPrefabY: {fileID: 2069014103894363697, guid: db1634cc8cc54b54cba339e1f8ffaedf, type: 3}
+  MyPrefabPared: {fileID: 5700599407616892265, guid: 235527fcbd0b202458e6b7fdd3211d9e, type: 3}
   InitPos: {fileID: 1456727880}
   InitPosY: {fileID: 1456727880}
+  InitPosPared: {fileID: 1456727880}
+  arrayObst:
+  - {fileID: 2069014103894363697, guid: db1634cc8cc54b54cba339e1f8ffaedf, type: 3}
+  - {fileID: 7789110707980114432, guid: 1ba581f44a96e844f864a28e8544a93b, type: 3}
+  - {fileID: 5700599407616892265, guid: 235527fcbd0b202458e6b7fdd3211d9e, type: 3}
+  initGame: {fileID: 0}
 --- !u!4 &1456727880
 Transform:
   m_ObjectHideFlags: 0
