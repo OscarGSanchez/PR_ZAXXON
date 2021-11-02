@@ -5,12 +5,17 @@ using UnityEngine;
 public class PrefabMov : MonoBehaviour
 {
 
-    [SerializeField] float speed = 100f;
+    [SerializeField] float speed;
+    InitGame initGame;
 
+    void Start()
+    {
+        initGame = GameObject.Find("InitGame").GetComponent<InitGame>();
+    }
     // Start is called before the first frame update
     void Update()
     {
-
+        speed = initGame.spaceshipSpeed;
         transform.Translate(Vector3.back * Time.deltaTime * speed);
 
         float posZ = transform.position.z;
@@ -22,13 +27,7 @@ public class PrefabMov : MonoBehaviour
 
     }
 
-    private void Start()
-    {
 
-        speed = 50f;
-
-
-    }
 
 
 

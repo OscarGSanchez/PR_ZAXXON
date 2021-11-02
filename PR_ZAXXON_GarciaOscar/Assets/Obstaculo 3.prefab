@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6209105085252444251}
   - component: {fileID: 5842955725564049363}
   - component: {fileID: 3192709343025364164}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: 'Obstaculo '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91,7 +91,7 @@ BoxCollider:
   m_GameObject: {fileID: 5026766528388208368}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -105,7 +105,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4352961517867423951}
   - component: {fileID: 5785454306261798777}
-  m_Layer: 0
+  - component: {fileID: 751724254234877959}
+  - component: {fileID: 1404161838023698539}
+  m_Layer: 6
   m_Name: Obstaculo 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -141,6 +143,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+--- !u!65 &751724254234877959
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5700599407616892265}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 59.03037, y: 31.72979, z: 1}
+  m_Center: {x: -39.34481, y: 13.7951, z: 0}
+--- !u!65 &1404161838023698539
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5700599407616892265}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 59.03037, y: 31.72979, z: 1}
+  m_Center: {x: 39.3753, y: 13.7951, z: 0}
 --- !u!1 &8843098499715720581
 GameObject:
   m_ObjectHideFlags: 0
@@ -153,7 +181,7 @@ GameObject:
   - component: {fileID: 4835576243484887943}
   - component: {fileID: 7820473547401759267}
   - component: {fileID: 8067019422902239731}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -232,7 +260,7 @@ BoxCollider:
   m_GameObject: {fileID: 8843098499715720581}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}

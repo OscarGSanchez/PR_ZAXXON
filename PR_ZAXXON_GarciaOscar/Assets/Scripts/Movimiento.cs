@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Movimiento : MonoBehaviour
 {
     float despx;
@@ -14,11 +15,16 @@ public class Movimiento : MonoBehaviour
     bool limith = true;
     bool limitv = true;
 
+    [SerializeField] GameObject navePrefab;
+    InitGame initGame;
+
+   
+
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        initGame = GameObject.Find("InitGame").GetComponent<InitGame>();
     }
 
     // Update is called once per frame
@@ -70,6 +76,21 @@ public class Movimiento : MonoBehaviour
         }
 
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        print("Ostia");
+        if (other.gameObject.layer == 6)
+        {
+
+            initGame.SendMessage("Morir");
+            navePrefab.SetActive(false);
+            Destroy(gameObject);
+
+        }
+    }
+
+
 
 
 }

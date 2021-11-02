@@ -32,6 +32,13 @@ public class PrefabGenerator : MonoBehaviour
         */
     }
 
+    public void Parar()
+    {
+        print("Se han parado la corrutina");
+        StopCoroutine("CrearObstaculos");
+    }
+
+
     IEnumerator CrearObstaculos()
     {
         while (true)

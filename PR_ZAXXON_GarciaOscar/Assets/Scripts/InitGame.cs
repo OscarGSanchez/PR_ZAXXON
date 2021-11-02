@@ -6,6 +6,8 @@ public class InitGame : MonoBehaviour
 {
 
     public float spaceshipSpeed;
+    bool alive;
+   
 
     // Start is called before the first frame update
     void Start()
@@ -19,5 +21,14 @@ public class InitGame : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void Morir()
+    {
+        alive = false;
+        spaceshipSpeed = 0f;
+        PrefabGenerator instanciadorObst = GameObject.Find("PrefabGenerator").GetComponent<PrefabGenerator>();
+        instanciadorObst.SendMessage("Parar");
+
     }
 }
