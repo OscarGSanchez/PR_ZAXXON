@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Pantalla principal.unity
+    guid: cbcd589f7abe7f141ba555a051b5e24b
+  - enabled: 1
+    path: Assets/Scenes/Pantalla inicio.unity
+    guid: 724f25f0e0109224e95213e19d05fd3f
+  - enabled: 1
+    path: Assets/Scenes/Configuracion.unity
+    guid: ccb18103f1e5a4049957312d7623fdcf
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/You are dead.unity
+    guid: 7d42e34fce39bcb47b037d7f842bf846
+  - enabled: 1
+    path: Assets/Scenes/High Score.unity
+    guid: 3b25f20b6057f5b47a28f9905f067261
+  m_configObjects: {}
