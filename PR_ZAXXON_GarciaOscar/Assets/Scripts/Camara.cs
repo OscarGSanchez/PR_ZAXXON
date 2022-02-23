@@ -18,6 +18,7 @@ public class Camara : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3(playerPosition.position.x, playerPosition.position.y + 15, playerPosition.position.z - 25);
+        Vector3 targetPosition = new Vector3(playerPosition.position.x, playerPosition.position.y +15, playerPosition.position.z -25);
+        transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref camaraVelocity, smoothVelocity);
     }
 }

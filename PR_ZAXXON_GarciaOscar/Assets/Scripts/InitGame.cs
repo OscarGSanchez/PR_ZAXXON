@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class InitGame : MonoBehaviour
 {
@@ -30,7 +29,6 @@ public class InitGame : MonoBehaviour
         spaceshipSpeed = 0f;
         PrefabGenerator instanciadorObst = GameObject.Find("PrefabGenerator").GetComponent<PrefabGenerator>();
         instanciadorObst.SendMessage("Parar");
-        SceneManager.LoadScene(4);
 
     }
 }

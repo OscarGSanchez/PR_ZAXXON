@@ -14,6 +14,8 @@ public class PrefabGenerator : MonoBehaviour
     [SerializeField] GameObject[] arrayObst;
     [SerializeField] InitGame initGame;
 
+    [SerializeField] Vector3[] shipPos = new Vector3[2];
+    public GameObject NaveSaers;
 
     int level;
     float intervalo;
@@ -22,6 +24,20 @@ public class PrefabGenerator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+        //Posiciones de la nave
+        Vector3 posRandom1 = new Vector3(-5, 0, 0);
+        Vector3 posRandom2 = new Vector3(5, 0, 0);
+        shipPos[0] = posRandom1;
+        shipPos[1] = posRandom2;
+
+        int randomShipPos = Random.Range(0, 2);
+        Instantiate(NaveSaers, shipPos[randomShipPos],Quaternion.identity);
+
+
+
+
+
 
         initGame = GameObject.Find("InitGame").GetComponent<InitGame>();
         intervalo = 1f;
@@ -51,6 +67,7 @@ public class PrefabGenerator : MonoBehaviour
             
             if (rand == 0)
             {
+                instPos = new Vector3 (Random.Range(-63f, 63f), 20, InitPos.position.z);
                 Instantiate(MyPrefab, instPos, Quaternion.identity);
             }
             else if(rand == 1)
@@ -60,7 +77,7 @@ public class PrefabGenerator : MonoBehaviour
             }
             else
             {
-                instPos = new Vector3(0, Random.Range(0f, 2f), InitPos.position.z);
+                instPos = new Vector3(0, 20, InitPos.position.z);
                 Instantiate(MyPrefabPared, instPos, Quaternion.identity);
             }
             

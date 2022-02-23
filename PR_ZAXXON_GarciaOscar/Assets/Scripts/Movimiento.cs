@@ -8,10 +8,10 @@ public class Movimiento : MonoBehaviour
     float despx;
     float despy;
     [SerializeField] float speed;
-    float finaldrch = 65;
-    float finalizq = -65;
-    float finaldown = -0.5f;
-    float finalup = 20;
+    float finaldrch = 70;
+    float finalizq = -70;
+    float finaldown = 6;
+    float finalup = 25;
     bool limith = true;
     bool limitv = true;
 
@@ -85,7 +85,6 @@ public class Movimiento : MonoBehaviour
 
             initGame.SendMessage("Morir");
             navePrefab.SetActive(false);
-            Destroy(gameObject);
 
         }
     }
