@@ -10,14 +10,15 @@ public class Movimiento : MonoBehaviour
     [SerializeField] float speed;
     float finaldrch = 65;
     float finalizq = -65;
-    float finaldown = 10;
-    float finalup = 40;
+    float finaldown = -0.5f;
+    float finalup = 20;
     bool limith = true;
     bool limitv = true;
 
     [SerializeField] GameObject navePrefab;
+    [SerializeField] Transform explosionpos;
     InitGame initGame;
-
+    public ParticleSystem explosion;
    
 
 
@@ -85,8 +86,8 @@ public class Movimiento : MonoBehaviour
 
             initGame.SendMessage("Morir");
             navePrefab.SetActive(false);
+            Instantiate (explosion,explosionpos);
             Destroy(gameObject);
-
         }
     }
 

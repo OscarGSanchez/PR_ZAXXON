@@ -22,7 +22,7 @@ public class PrefabGenerator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        
         initGame = GameObject.Find("InitGame").GetComponent<InitGame>();
         intervalo = 2f;
         StartCoroutine("CrearObstaculos");
