@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class PrefabMov : MonoBehaviour
 {
-
+    AudioSource audioSource;
     [SerializeField] float speed;
     InitGame initGame;
 
     void Start()
     {
         initGame = GameObject.Find("InitGame").GetComponent<InitGame>();
+        audioSource = GetComponent<AudioSource>();
+        audioSource.Play();
     }
     // Start is called before the first frame update
     void Update()

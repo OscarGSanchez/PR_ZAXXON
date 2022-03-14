@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 369b9ebe3a62b904dbc19bd332b44086, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.43051678, g: 0.4655288, b: 0.49753207, a: 1}
+  m_IndirectSpecularColor: {r: 0.010482894, g: 0.052960582, b: 0.15313521, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -216,7 +216,7 @@ RectTransform:
   m_Children:
   - {fileID: 409761056}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -594,8 +594,8 @@ Camera:
   m_GameObject: {fileID: 963194225}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.25711653, g: 0.03724635, b: 0.2924528, a: 0}
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.13047835, g: 0.12691349, b: 0.8679245, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -721,7 +721,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1199754644
 GameObject:
@@ -1101,6 +1101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 100
   navePrefab: {fileID: 2045231356376080705, guid: 9bc843daa0d60774a9df2bf87c191b6f, type: 3}
+  explosion: {fileID: 0}
 --- !u!4 &2043517480185728661 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1669093533530274811, guid: 9bc843daa0d60774a9df2bf87c191b6f, type: 3}
